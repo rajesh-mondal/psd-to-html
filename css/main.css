@@ -1,0 +1,701 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+*{margin: 0px; padding: 0px;}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+
+@font-face{
+    font-family:"ARDECODE"
+        src: url(../fonts/ARDECODE.ttf)
+}
+
+header{
+    background-color: #2a2e33;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.header_wrapper{
+    width: 1300px;
+    margin: 0 auto; 
+}
+
+footer{
+    background-color: #333333;
+    min-height: 455px;
+    overflow: hidden;
+}
+
+#banner {
+    background-color: #00ccff;
+    min-height: 520px;
+    position: relative;
+}
+
+#select_room_type { 
+    width: 255px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    appearance:none;
+    -moz-appearance: none; 
+    -webkit-appearance:none;
+    background: url(../images/select-icon.png) no-repeat;
+    background-position: 5%;
+    background-color: white;
+    padding-left: 11%;
+}
+
+#select_room_type select{
+    appearance: none; -moz-appearance: none; -webkit-appearance:none;
+}
+
+#package_booking { 
+    min-height: 600px;
+    background: url(../images/package-bg.jpg) no-repeat center center;
+    border-bottom: 2px solid #e7e8e8;
+    overflow: hidden;
+    background-size: cover;
+}
+
+#room_types {
+    background: url(../images/room-type-bg.jpg) no-repeat center center;
+    min-height: 950px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+#testimonial {
+    background-color: #e7cb2c;
+    min-height: 185px;
+    position: relative; 
+}
+
+.testimonial_wrapper{
+    width: 1300px;
+    margin: 0 auto;
+    position: absolute; 
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    width: 404px;
+    height: 26px;
+    padding-top: 42px;
+}
+
+.sub_title {
+    font-family: Quicksand;
+    font-size: 13pt;
+    color: #797b7d;
+}
+
+.menubar {  
+    width: 786px;
+}
+
+.menubar ul{  
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.menubar ul li{  
+    float: left;
+}
+
+.menubar ul li a{ 
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: Droid Sans;
+    font-size: 12pt;
+    padding: 42px 22px;
+    display: block;
+}
+
+.menubar ul li a:hover{ 
+    background-color: #1e2329;
+    padding: 40px 22px;
+    border-top: 4px solid #ffd700;
+}
+
+.banner_caption {
+    width: 740px;
+    height: 245px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 60px;
+    
+}
+
+.welcome_text {
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 30pt;
+    color: white;
+}
+
+.caption_title {
+    font-family: Droid Sans;
+    font-weight: bold;
+    font-size: 60pt;
+    color: white;  
+}
+
+.facilities {
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: 30pt;
+    color: white;
+}
+
+.view_pricing {
+    background-color: #2a2e33;
+    width: 1019px;
+    height: 102px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -11%;
+    margin: 0 auto;
+}
+
+.form_group {
+    float: left;
+    margin-left: 15px;
+}
+
+.form_group label{
+    font-family: Quicksand;
+    font-weight: 400;
+    color: #c0bd0b;
+    font-size: 18pt;
+}
+
+.coomon_date_style {
+    width: 255px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background: url(../images/calender-icon.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 5%;
+}
+
+.view_price_btn {
+    width: 175px;
+    height: 45px;
+    background-color: #ffd700;
+    font-family: Droid Sans;
+    font-weight: bold; 
+    font-size: 18pt;
+    border: none;
+    border-radius: 10px;
+    margin-top: 32px; 
+}
+
+.package_booking_title {
+    width: 1165px;
+    height: 107px;
+    text-align: center;
+    margin: 0 auto;
+    margin: 95px auto;
+}
+
+.package_booking_title h1{
+    font-family: Dancing Script;
+    font-size: 40pt;
+    color: #2a2e33;
+    margin: 0px;
+}
+.package_booking_title p{
+    font-family: Quicksand;
+    font-size: 14pt;
+    color: #2a2e33;
+}
+
+.package_slider {
+    width: 1035px;
+    height: 230px;
+    margin: 0 auto;
+}
+
+.left_indicator {
+    margin-top: 10%;
+}
+
+.single_item {
+    float: left;
+    width: 225px;
+    height: 215px;
+    background-color: white;
+   
+    border-radius: 130px;
+    margin-left: 6%;
+    margin-top: 35px;
+}
+
+.right_indicator {
+    margin-top: 10%;
+}
+
+.room_types_title {
+    width: 455px;
+    height: 75px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.room_types_title h1{
+    margin: 0px;
+    font-family: Dancing Script;
+    font-size: 40pt;
+    color: #2a2e33;
+}
+
+.all_room_types {
+    width: 1300px;
+    height: 580px;
+    margin: 70px auto;
+}
+
+.single_types {
+    width: 380px;
+    height: 350px;
+    float: left;
+    text-align: center;
+    margin-left: 3%;
+}
+
+.room_image {
+}
+
+.room_type_data {
+}
+
+.room_type_data h1{
+    font-family: Quicksand;
+    font-weight: normal;
+    font-size: 24pt;
+    margin: 0px;
+}
+
+.room_type_data p{
+    font-family: Quicksand;
+    font-weight: normal;
+    font-size: 14pt;
+    margin: 0px;
+}
+
+.short_intro {
+}
+
+.room_facility {
+    margin-top: 15px;
+}
+
+.room_facility img{
+    
+}
+
+.testimonial_data {
+    width: 875px;
+    height: 95px;
+    float: left;
+    padding-top: 45px;
+    font-family: Quicksand;
+    text-align: center;
+}
+
+.testimonial_data h1{
+    color: white;
+    font-weight: 400;
+    font-size: 36pt;
+    margin: 0px;
+}
+
+.comments {
+    color: white;
+    font-weight: normal;
+    font-size: 14pt;
+}
+
+.author {
+    color: white;
+    font-weight: normal;
+    font-size: 14pt;
+}
+
+.personal_image {
+    position: absolute;
+    right: 0%; 
+    bottom: -39%;
+}
+
+.footer_wrapper{
+    width: 1340px;
+    height: 188px;
+    margin: 0px auto;
+    padding-top: 25px;
+}
+
+.about_hotel {
+    width: 350px;
+    height: 200px;
+}
+
+.about_hotel h1, .latest_news h1, .join_delux h1, .member_area h1{
+    font-family: Dorid Sand;
+    font-size: 18pt;
+    color: #dbdbdb;
+}
+
+.footer_description {
+    font-family: Quick Sand;
+    font-size: 14pt;
+    color: #dbdbdb;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.latest_news {
+    width: 310px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.single_news {
+    font-family: Quick Sand;
+    font-size: 14pt;
+    color: #dbdbdb;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.date {
+    font-family: Quicksand;
+    font-size: 14pt;
+    color: #c7cb2c;
+}
+
+.join_delux {
+    width: 460px;
+    height: 200px;
+}
+
+.read_more {
+    width: 155px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e7cb2c;
+    font-family: Quicksand;
+    font-size: 14pt;
+    color: #36321f;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.member_area {
+    width: 210px;
+    height: 200px;
+}
+
+.member_form_group{}
+
+.member_form_group label{
+    font-family: Quicksand;
+    font-size: 14pt;
+    font-weight: normal;
+    color: #dbdbdb;
+}
+
+.username {
+    background-color: transparent;
+    border: 2px solid #2c2c2c;
+    border-radius: 10px;
+    width: 202px;
+    height: 32px;
+}
+
+.footer_bottom{
+    height: 35px;
+    background-color: #1f1f1f;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
